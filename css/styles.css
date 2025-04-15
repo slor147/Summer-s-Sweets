@@ -154,3 +154,127 @@ height: 150px;
 object-fit: cover;
 border-radius: 8px;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/*                                       About page                                           */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+body.about-page {
+  background-color: #fcdada;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff6f91;
+}
+
+nav a.active {
+  color: #b37c5c;
+  font-weight: bold;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 60px;               
+  max-width: 1000px;
+  margin: 80px auto;       
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffe6e6;
+}
+
+.about-video {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-video video {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.about-video .shadow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  background-color: #ee6b6e;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fcdada;
+}
+
+footer a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: #ff6f91;
+}
